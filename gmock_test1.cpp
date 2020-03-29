@@ -1,6 +1,6 @@
 // From: https://gist.github.com/lukant/376df8c49a3aba8179879fadcea77dea
 
-#include <gmock/gmock.h>
+#include "gmock/gmock.h"
 
 using namespace ::testing;
 

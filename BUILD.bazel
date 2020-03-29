@@ -1,0 +1,9 @@
+cc_test(
+    name = "gmock_tests",
+    srcs = [
+        "gmock_test1.cpp",
+    ],
+    deps = [
+        "@com_google_googletest//:gtest_main",
+    ],
+)
