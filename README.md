@@ -38,10 +38,10 @@ See also: https://stackoverflow.com/questions/44034633/google-mock-can-i-call-ex
 
 # To run the tests
 
-        time bazel test //...           # run ALL tests
-        time bazel test //:gmock_tests  # run tests for just this target
+    time bazel test //...           # run ALL tests
+    time bazel test //:gmock_tests  # run tests for just this target
 
 # Other bazel commands:
 
-        bazel query //... # query for a list of all possible build targets 
+    bazel query //... # query for a list of all possible build targets 
 
