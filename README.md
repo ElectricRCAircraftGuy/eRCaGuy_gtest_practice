@@ -21,7 +21,7 @@ See also: https://stackoverflow.com/questions/44034633/google-mock-can-i-call-ex
 
         time bazel build //...  # Build ALL build targets
 
-  Here's a sample of successful output:
+    Here's a sample of successful output:
 
         $ time bazel build //...
         INFO: Analyzed target //:gmock_tests (0 packages loaded, 0 targets configured).
