@@ -8,7 +8,9 @@ www.ElectricRCAircraftGuy.com
 # Status
 It works! I am able to successfully write and run google tests and mocks. Follow Build & Run instructions below.  
 
-See also: https://stackoverflow.com/questions/44034633/google-mock-can-i-call-expect-call-multiple-times-on-same-mock-object/60905880#60905880
+# Cross-references
+1. Inspired by this question, "**google mock - can I call EXPECT_CALL multiple times on same mock object?**", and [my big Stack Overflow answer to it here](https://stackoverflow.com/questions/44034633/google-mock-can-i-call-expect-call-multiple-times-on-same-mock-object/60905880#60905880)
+1. and my big discussion with @luantkow under [his answer here](https://stackoverflow.com/questions/44034633/google-mock-can-i-call-expect-call-multiple-times-on-same-mock-object/44035118#44035118), as well as on [his code gist (under GitHub username @lukant) here](https://gist.github.com/lukant/376df8c49a3aba8179879fadcea77dea).
 
 # To Build (Ubuntu instructions):
 1. Install Bazel: https://docs.bazel.build/versions/master/install-ubuntu.html

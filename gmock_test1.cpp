@@ -9,6 +9,7 @@ struct SomeMock
     MOCK_CONST_METHOD1(foo, void(int));
 };
 
+// Intentionally fails
 TEST(Examples, TheSameArgumentsGoingToFail)
 {
     SomeMock mock;
@@ -20,6 +21,7 @@ TEST(Examples, TheSameArgumentsGoingToFail)
     mock.foo(4);
 }
 
+// Intentionally fails
 TEST(Examples, theTestWillFailWhenOnlyLastExpectancyWasSatisfied)
 {
     SomeMock mock;
@@ -31,6 +33,7 @@ TEST(Examples, theTestWillFailWhenOnlyLastExpectancyWasSatisfied)
     mock.foo(4);
 }
 
+// Intentionally fails
 TEST(Examples, theTestWillFailWhenOnlyLastExpectancyWasSatisfied_theSameCardinality)
 {
     SomeMock mock;

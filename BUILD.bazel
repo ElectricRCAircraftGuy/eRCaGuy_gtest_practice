@@ -3,6 +3,7 @@ cc_test(
     name = "gmock_tests",
     srcs = [
         "gmock_test1.cpp",
+        "gmock_test2.cpp",
     ],
     deps = [
         "@com_google_googletest//:gtest_main",
