@@ -76,5 +76,5 @@ Note that you can also *manually* pass these flags to a binary you have successf
 
 # Adding your own test:
 
-Just create your own `.h` and/or `.cpp` file with some tests in it. Then, modify the `BUILD.bazel` file, either adding your new `.h` and `.cpp` files to the `srcs` list in an existing `cc_test`, or creating a new `cc_test` specifically for your new test files. 
+Just create your own `.cpp` test file or a `.h`/`.cpp` test file pair with some tests in it. Then, modify the `BUILD.bazel` file, either adding your new `.h` and `.cpp` files to the `srcs` list in an existing `cc_test`, or creating a new `cc_test` specifically for your new test files. 
 
