@@ -38,10 +38,43 @@ See also: https://stackoverflow.com/questions/44034633/google-mock-can-i-call-ex
 
 # To run the tests
 
+## In short:
+
+    time bazel test --test_output=errors --test_arg=--gtest_color=yes //...    
+
+## Details:
+
     time bazel test //...           # run ALL tests
-    time bazel test //:gmock_tests  # run tests for just this target
+    time bazel test //:gmock_tests  # run tests for just this "gmock_tests" target
+
+To log all errors (failed test results) to stdout, add `--test_output errors`. See: https://groups.google.com/forum/#!topic/bazel-discuss/2mJPklIaCeo and see `bazel help test` for additional options. Ex:
+
+    time bazel test --test_output errors //...  # log all errors (failed test results) to stdout 
+
+To log all output (failed AND passed results) to stdout, add `--test_output all`. Ex:
+
+    time bazel test --test_output all //...     # log ALL output (both failed & passed test results) to stdout 
+
+But, this is drab! I want to <span style="color:red">**see the failures in red**</span> when they occur! To do that, we need to add the `--gtest_color=yes` option to the test binary when it is called. Do that with the bazel `--test_arg` option: `--test_arg=--gtest_color=yes`. The final command will now look like this:
+
+    time bazel test --test_output=errors --test_arg=--gtest_color=yes //... 
+
+Note that you can also *manually* pass these flags to a binary you have successfully built, such as `bazel-bin/gmock_tests`, as follows:
+
+    bazel-bin/gmock_tests --gtest_color=yes
+
+**References:**
+
+1. Use the bazel `--test_arg` option to pass arguments to tests! https://stackoverflow.com/questions/50877601/how-to-pass-custom-flags-to-bazel-test-command/50890446#50890446
+1. Pass `--gtest_color=yes` to any test binary to see colored output: https://github.com/google/googletest/blob/master/googletest/docs/advanced.md#controlling-test-output
+1. If bazel isn't outputting color for some reason add this after the `bazel build` or `bazel test` command as well: `--color=yes`; see: https://docs.bazel.build/versions/master/user-manual.html#flag--color
+1. Add color to text in markdown (ie: here is how I added red to this readme itself): https://stackoverflow.com/questions/35465557/how-to-apply-color-in-markdown/43355451#43355451
 
 # Other bazel commands:
 
     bazel query //... # query for a list of all possible build targets 
+
+# Adding your own test:
+
+Just create your own `.h` and/or `.cpp` file with some tests in it. Then, modify the `BUILD.bazel` file, either adding your new `.h` and `.cpp` files to the `srcs` list in an existing `cc_test`, or creating a new `cc_test` specifically for your new test files. 
 
