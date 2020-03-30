@@ -42,7 +42,9 @@ It works! I am able to successfully write and run google tests and mocks. Follow
 
 ## In short:
 
-    time bazel test --test_output=errors --test_arg=--gtest_color=yes //...    
+    time bazel test --test_output=errors --test_arg=--gtest_color=yes //...             # run ALL tests
+    time bazel test --test_output=errors --test_arg=--gtest_color=yes //:gmock_test1    # run only test 1
+    time bazel test --test_output=errors --test_arg=--gtest_color=yes //:gmock_test2    # run only test 2
 
 ## Details:
 

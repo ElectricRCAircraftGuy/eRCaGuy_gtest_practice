@@ -1,8 +1,17 @@
 # https://docs.bazel.build/versions/master/be/c-cpp.html#cc_test
 cc_test(
-    name = "gmock_tests",
+    name = "gmock_test1",
     srcs = [
         "gmock_test1.cpp",
+    ],
+    deps = [
+        "@com_google_googletest//:gtest_main",
+    ],
+)
+
+cc_test(
+    name = "gmock_test2",
+    srcs = [
         "gmock_test2.cpp",
     ],
     deps = [

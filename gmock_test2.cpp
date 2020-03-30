@@ -43,8 +43,8 @@ TEST(Examples, theTestWillFailWhenOnlyLastExpectancyWasSatisfied_theSameCardinal
 {
     SomeMock mock;
 
-    EXPECT_CALL(mock, foo(4)).Times(2);
-    EXPECT_CALL(mock, foo(4)).Times(2);
+    EXPECT_CALL(mock, foo(4)).Times(0);
+    EXPECT_CALL(mock, foo(4)).Times(1);
 
     mock.foo(4);
     // mock.foo(4);
