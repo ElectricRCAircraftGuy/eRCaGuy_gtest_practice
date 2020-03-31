@@ -18,3 +18,14 @@ cc_test(
         "@com_google_googletest//:gtest_main",
     ],
 )
+
+cc_test(
+    name = "gmock_test3",
+    srcs = [
+        "gmock_test3.h",
+        "gmock_test3.cpp",
+    ],
+    deps = [
+        "@com_google_googletest//:gtest_main",
+    ],
+)
