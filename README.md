@@ -37,7 +37,7 @@ For much simpler gtest code examples and build commands, **see the gtest example
     ls -1 *unittest*
     ``` 
 
-    Sample run and output:
+    Sample run and output to find all unittest files:
     ```bash
     eRCaGuy_hello_world/cpp$ ls -1 *unittest*
     curl_lib_unittest.cpp
