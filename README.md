@@ -122,7 +122,7 @@ Note that you can also *manually* pass these flags to a binary you have successf
 bazel-bin/gmock_tests --gtest_color=yes
 ```
 
-**References:**
+### References:
 
 1. Use the bazel `--test_arg` option to pass arguments to tests! https://stackoverflow.com/questions/50877601/how-to-pass-custom-flags-to-bazel-test-command/50890446#50890446
 1. Pass `--gtest_color=yes` to any test binary to see colored output: https://github.com/google/googletest/blob/master/googletest/docs/advanced.md#controlling-test-output
