@@ -13,7 +13,7 @@ It works! I am able to successfully write and run google tests and mocks. Follow
 
 # See also
 For much simpler gtest code examples and build commands, **see the gtest examples in my [eRCaGuy_hello_world](https://github.com/ElectricRCAircraftGuy/eRCaGuy_hello_world) repo instead, which just use basic gcc/g++-compiler `g++` build commands.** 
-1. First, follow the instructions in the `eRCaGuy_hello_world/cpp/README.md` here: [C++ Googletest setup: how to build googletest (gtest and gmock) with the gcc/g++ compiler](https://github.com/ElectricRCAircraftGuy/eRCaGuy_hello_world/tree/master/cpp#c-googletest-setup-how-to-build-googletest-gtest-and-gmock-with-the-gccg-compiler). 
+1. First, follow the instructions in the [`eRCaGuy_hello_world/cpp/README.md`](https://github.com/ElectricRCAircraftGuy/eRCaGuy_hello_world/tree/master/cpp) here: [C++ Googletest setup: how to build googletest (gtest and gmock) with the gcc/g++ compiler](https://github.com/ElectricRCAircraftGuy/eRCaGuy_hello_world/tree/master/cpp#c-googletest-setup-how-to-build-googletest-gtest-and-gmock-with-the-gccg-compiler). 
 1. Then, run any of the `eRCaGuy_hello_world/cpp/gtest_demo__*` files by running the build-and-run commands in the comments at the top of each of those files. 
 1. You can also run any `eRCaGuy_hello_world/cpp/*_unittest.cpp` files, as these are also gtest files. See their build-and-run instructions in the comments at the top of each file. 
     1. Example build-and-run command for the [eRCaGuy_hello_world/cpp/swap_bytes_lib_unittest.cpp](https://github.com/ElectricRCAircraftGuy/eRCaGuy_hello_world/blob/master/cpp/swap_bytes_lib_unittest.cpp) file:
